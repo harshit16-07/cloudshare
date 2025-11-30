@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Urbanist:wght@100..900&display=swap');
+@import "tailwindcss";
+
+* {
+  font-family: "Urbanist", sans-serif;
+}
+
+/* BUTTONS */
+.card-btn {
+  @apply flex items-center gap-2 text-white bg-blue-500 px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-600;
+}
+
+.add-btn {
+  @apply flex items-center gap-2 text-white bg-purple-600 px-4 py-2 rounded-md text-sm font-medium hover:bg-purple-700;
+}
+
+.add-btn-fill {
+  @apply text-white bg-purple-600;
+}
+
+/* LAYOUT */
+.landing-page-content {
+  @apply overflow-visible;
+}
+
+.landing-page {
+  @apply overflow-y-auto h-screen;
+}
