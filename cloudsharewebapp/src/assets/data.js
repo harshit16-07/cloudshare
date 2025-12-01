@@ -1,13 +1,54 @@
+export const features = [
+  {
+    title: "Easy File Upload",
+    description: "Quickly upload your files with our intuitive drag-and-drop interface.",
+    icon: "FileText",
+    iconColor: "#A855F7" // purple
+  },
+  {
+    title: "Secure Storage",
+    description: "Your files are encrypted and stored securely in our cloud infrastructure.",
+    icon: "Shield",
+    iconColor: "#22C55E" // green
+  },
+  {
+    title: "Simple Sharing",
+    description: "Share files with anyone using secure links that you control.",
+    icon: "Share2",
+    iconColor: "#8B5CF6" // soft purple
+  },
+  {
+    title: "Flexible Credits",
+    description: "Pay only for what you use with our credit-based system.",
+    icon: "CreditCard",
+    iconColor: "#F97316" // orange
+  },
+  {
+    title: "File Management",
+    description: "Organize, preview, and manage your files from any device.",
+    icon: "FileText",
+    iconColor: "#EF4444" // red
+  },
+  {
+    title: "Transaction History",
+    description: "Keep track of all your credit purchases and usage.",
+    icon: "Clock",
+    iconColor: "#6366F1" // indigo
+  }
+];
+
 export const pricingPlans = [
   {
-    name: "Basic",
+    name: "Free",
     price: "0",
     description: "A simple plan for personal and light usage.",
     features: [
+      "5 file uploads",
+           "Basic file sharing",
       "7-day file retention",
       "Email support",
-      "100 MB upload limit",
-      "10 total uploads"
+     
+      
     ],
     cta: "Get Started",
     highlighted: false,
@@ -27,17 +68,19 @@ export const pricingPlans = [
     highlighted: true,
   },
   {
-    name: "Business",
+    name: "Ultimate",
     price: "1200",
     description: "Best for teams & businesses",
     features: [
-      "Unlimited file uploads",
-      "60-day retention",
-      "Team sharing",
+      "5000 file uploads",
+      "Team sharing capabilities",
+      "unlimited file retention",
+      "24/7 priority support",
       "Advanced analytics",
-      "24/7 support"
+      "API access"
+      
     ],
-    cta: "Choose Business",
+    cta: "Go Ultimate",
     highlighted: false,
   },
 ];
