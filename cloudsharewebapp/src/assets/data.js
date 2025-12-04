@@ -84,3 +84,28 @@ export const pricingPlans = [
     highlighted: false,
   },
 ];
+export const testimonials = [
+  {
+    quote: "CloudShare transformed our workflow completely. We no longer waste time managing files or waiting for uploads. The platform is incredibly fast, secure, and reliable—which means our team can focus on building features instead of handling infrastructure issues.",
+    name: "John Doe",
+    role: "Software Engineer",
+    image: "https://i.pravatar.cc/100?img=1",
+        rating: 5
+  },
+  {
+    quote: "The user interface is clean and intuitive, making it easy for our non-technical staff to upload and share files without any training. The credit-based system is flexible and cost-effective, allowing us to scale our usage based on project needs.",
+    name: "Sarah Lee",
+   role: "Product Manager",
+    image: "https://i.pravatar.cc/100?img=2",
+    rating: 5
+  },
+  {
+    quote: "As a team lead, I appreciate how CloudShare facilitates collaboration. Sharing files securely with external partners has never been easier. The peace of mind that comes with knowing our data is protected is invaluable.",
+    name: "Michael Smith",
+    role: "Team Lead",
+    image: "https://i.pravatar.cc/100?img=3",
+        rating: 4
+  },
+];
+
+

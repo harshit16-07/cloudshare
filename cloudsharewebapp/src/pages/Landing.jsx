@@ -4,16 +4,21 @@ import PricingSection from "../components/landing/PricingSection";
 import TestimonialsSection from "../components/landing/TestimonialsSection";
 import CTASection from "../components/landing/CTASection";
 import Footer from "../components/landing/Footer";
-import { features, pricingPlans } from "../assets/data";
-
+import { features, pricingPlans,testimonials } from "../assets/data";
+import { useClerk } from "@clerk/clerk-react";
+import { useUser } from "@clerk/clerk-react";
+import { useNavigate } from "react-router-dom";
 
 const Landing = () => {
+ const{openSignIn, openSignUp} =useClerk();
+const{isSignedIn}= useUser();
+const navigate = useNavigate();
   return (
     <div className="landing-page bg-gradient-to-b from-gray-50 to-gray-100">
-      <HeroSection />
+      <HeroSection  openSignIn={openSignIn} openSignUp={openSignUp}/>
       <FeaturesSection  features={features}/>
       <PricingSection  pricingPlans={pricingPlans}/>
-      <TestimonialsSection />
+      <TestimonialsSection  testimonials={testimonials}/>
       <CTASection />
       <Footer />
     </div>

@@ -31,7 +31,9 @@ const PricingSection = ({pricingPlans}) => {
          {plan.description}
   </p>
   <p className="mt-8 flex justify-between items-center font-medium">
-         ${plan.price}
+      <span className="text-4xl font-extrabold text-gray-5=600">
+        ${plan.price}
+      </span>
   </p>
 </div>
 <div className="flex flex-1 flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 space-y-6">
